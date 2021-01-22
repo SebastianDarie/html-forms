@@ -35,27 +35,30 @@
             <header class="header-logos">
               <div class="logos-container">
                 <ul class="logo-list">
-                  <li>
+                  <li class="list-item">
                     <span class="small-logo" id="mint"></span>
                     <a
                       href="https://www.mint.com"
                       aria-label="mint"
+                      class="logo-text"
                       id="mint-text"
                     ></a>
                   </li>
-                  <li>
+                  <li class="list-item">
                     <span class="small-logo" id="qb"></span>
                     <a
                       href="https://quickbooks.intuit.com"
                       aria-label="quickbooks"
+                      class="logo-text"
                       id="quickbooks"
                     ></a>
                   </li>
-                  <li>
+                  <li class="list-item">
                     <span class="small-logo" id="check"></span>
                     <a
                       href="https://turbotax.intuit.com"
                       aria-label="turbotax"
+                      class="logo-text"
                       id="turbotax-text"
                     ></a>
                   </li>
@@ -63,10 +66,46 @@
               </div>
             </header>
           </div>
-          <div class="form-wrapper"></div>
+          <div class="form-wrapper">
+            <section class="form-section">
+              <header class="form-header">
+                <span class="form-heading"> Create an Intuit account </span>
+                <span class="sub-heading">
+                  One account for everything Intuit, including Mint.
+                  <a
+                    href="https://accounts-help.intuit.com/app/intuit/1995107"
+                    class="forgot-link"
+                  >
+                    Learn more
+                  </a>
+                </span>
+              </header>
+              <form action="#" class="form">
+                <fieldset id="email-field" class="generic-field">
+                  <label for="email" class="field-label">Email address</label>
+                  <div class="input-container">
+                    <input type="email" id="email" class="input" />
+                  </div>
+                  <span class="error-span"></span>
+                </fieldset>
+                <fieldset id="phone-field" class="generic-field">
+                  <label for="phone" class="field-label"
+                    >Phone (recommended)</label
+                  >
+                  <div class="input-container">
+                    <input type="text" id="phone" class="input" />
+                  </div>
+                  <span class="error-span" id="phone-span">
+                    Standard call, messaging or data rates may apply.
+                  </span>
+                </fieldset>
+                <fieldset id="password-field" class="generic-field"></fieldset>
+              </form>
+              <footer class="form-footer"></footer>
+            </section>
+          </div>
           <footer class="footer"></footer>
         </div>
-        <!-- <footer class="footer"></footer> -->
       </section>
     </section>
   </body>
